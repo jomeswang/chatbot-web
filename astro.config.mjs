@@ -14,5 +14,9 @@ export default defineConfig({
     solidJs()
   ],
   output: 'server',
-  adapter: vercel()
+  adapter: vercel(),
+  server: {
+    port: process.env.PORT || 3000,
+    host: true
+  }
 });
