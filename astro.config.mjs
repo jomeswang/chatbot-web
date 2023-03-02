@@ -16,7 +16,7 @@ export default defineConfig({
   output: 'server',
   adapter: vercel(),
   server: {
-    port: process.env.PORT || 3000,
+    port: +process.env.PORT || 3000,
     host: true
   }
 });
